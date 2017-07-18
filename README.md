@@ -1,6 +1,6 @@
 # Menubar Player for Plex
 
-![Example screenshot](./screenshot.png)
+![Example screenshot](./screenshot-1.png)
 
 An embeddable webview pointing directly at `https://app.plex.tv/web`.
 
@@ -8,6 +8,12 @@ This exists literally so I could learn how to
 [begin](https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md) &
 [deploy](https://npm.im/electron-packager)
 [Electron](https://electron.atom.io/) [menubar](https://github.com/maxogden/menubar) apps.
+
+It's sticky & resizable, making it perfect for a picture-in-picture tool:
+
+![Example screenshot #2](./screenshot-2.png)
+
+And it continues in the background, so click the menu icon again to show/hide it :thumbsup:.
 
 ## Use
 
