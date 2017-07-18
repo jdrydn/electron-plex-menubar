@@ -2,10 +2,10 @@ const menubar = require('menubar');
 
 const plex = menubar({
   index: 'https://app.plex.tv/web',
-	tooltip: 'Plex',
-	height: 250,
-	width: 400,
-	alwaysOnTop: true,
+  tooltip: 'Plex',
+  height: 250,
+  width: 400,
+  alwaysOnTop: true,
   windowPosition: 'trayLeft',
   webPreferences: {
     nodeIntegration: false,
