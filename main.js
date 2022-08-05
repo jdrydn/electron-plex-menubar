@@ -1,7 +1,7 @@
-const menubar = require('menubar');
+const { menubar } = require('menubar');
 
 const plex = menubar({
-  index: 'https://app.plex.tv/web',
+  index: 'https://app.plex.tv/desktop',
   tooltip: 'Plex',
   height: 250,
   width: 400,

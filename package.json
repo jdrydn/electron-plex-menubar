@@ -2,18 +2,17 @@
   "name": "electron-plex-menubar",
   "version": "1.0.0",
   "description": "A static player for Plex",
+  "private": true,
   "scripts": {
-    "build": "electron-packager . PlexMenubar --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
+    "build": "electron-packager . PlexMenubar --platform=darwin --arch=arm64 --icon=Icon.icns",
     "dev": "electron ."
   },
   "main": "main.js",
   "dependencies": {
-    "menubar": "^5.2.3"
+    "menubar": "^9.2.1"
   },
   "devDependencies": {
-    "electron-debug": "^1.1.0",
-    "electron-devtools-installer": "^2.0.1",
-    "electron-packager": "^5.1.0",
-    "electron-prebuilt": "^0.36.0"
+    "electron": "^19.0.11",
+    "electron-packager": "^15.5.1"
   }
 }
