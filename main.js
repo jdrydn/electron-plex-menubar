@@ -3,14 +3,17 @@ const { menubar } = require('menubar');
 const plex = menubar({
   index: 'https://app.plex.tv/desktop',
   tooltip: 'Plex',
-  height: 250,
-  width: 400,
-  alwaysOnTop: true,
-  windowPosition: 'trayLeft',
-  webPreferences: {
-    nodeIntegration: false,
-    zoomFactor: 0.5,
+  browserWindow: {
+    height: 250,
+    width: 400,
+    alwaysOnTop: true,
+    webPreferences: {
+      nodeIntegration: false,
+      zoomFactor: 0.5,
+    },
   },
+  showOnAllWorkspaces: true,
+  windowPosition: 'trayLeft',
 });
 
 plex.on('ready', function () {
