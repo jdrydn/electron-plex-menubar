@@ -1,4 +1,4 @@
-const { app, Menu } = require('electron');
+const { app, Menu, session } = require('electron');
 const { menubar } = require('menubar');
 
 const urls = [
@@ -7,12 +7,19 @@ const urls = [
   { label: 'Disney+', url: 'https://www.disneyplus.com/home' },
 ];
 
+const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
+
 app.on('ready', () => {
+  session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
+    details.requestHeaders['User-Agent'] = userAgent;
+    callback({ cancel: false, requestHeaders: details.requestHeaders });
+  });
+
   let currentUrl = urls[0].url;
 
   const mb = menubar({
-    index: currentUrl,
     tooltip: 'Plex',
+    index: currentUrl,
     browserWindow: {
       height: 250,
       width: 400,
