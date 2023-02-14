@@ -4,7 +4,7 @@
   "description": "A static player for Plex",
   "private": true,
   "scripts": {
-    "build": "electron-packager . PlexMenubar --platform=darwin --arch=arm64 --icon=Icon.icns",
+    "build": "electron-packager . PlexMenubar --platform=darwin --arch=arm64 --icon=Icon.icns --overwrite",
     "dev": "electron ."
   },
   "main": "main.js",
