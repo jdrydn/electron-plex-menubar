@@ -9,10 +9,10 @@
   },
   "main": "main.js",
   "dependencies": {
-    "menubar": "^9.2.1"
+    "menubar": "^9.3.0"
   },
   "devDependencies": {
-    "electron": "^19.0.11",
-    "electron-packager": "^15.5.1"
+    "electron": "^22.2.1",
+    "electron-packager": "^17.1.1"
   }
 }
